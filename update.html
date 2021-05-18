@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Update Status</title>
+    <link href="update.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/3ff17dbd4d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Navigation Bar-->
+      <div class="topnav" id="myTopnav">
+        <a href="amhome.html">Home</a>
+        <a href="cdProduct.html">Manage Product</a>
+        <a href="update.html"  class="active">Update Customer Status</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+      </div>
+    </header>
+      <div class="form">
+        <form method="post" action="orderform.php">
+          <fieldset>
+            <legend id= "note" align="right"> UPDATE STATUS </legend>
+
+            <legend id="oid"><b>Order ID :</b></legend>
+            <input type="text" name="id" required />
+
+            <legend id="st"><b>Status :</b></legend>
+            <input type="text" name="ustatus" required />
+
+            <br>
+            <input type="submit" name="update" class="btn1" value="UPDATE STATUS" />
+
+          </fieldset>
+          
+          
+        </form>
+        <br>
+        <a href="showStatus.php"><input type="button" class="btn1" value="SHOW CUSTOMER STATUS"></a>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>

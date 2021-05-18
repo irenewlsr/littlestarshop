@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pre-Order</title>
+    <link href="orderform.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/3ff17dbd4d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+	<header>
+        <!-- Navigation Bar-->
+        <div class="topnav" id="myTopnav">
+          <a href="index.php" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="showproductcus.php">Pre-Order</a>
+          <a href="showStatusCus.php">Check Status</a>
+          <a href="login.php">Login as admin</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>      
+        </div>
+      </header>
+
+		 <br />
+     <section class = "parent">
+       <section class="child">
+         <div class="imgBox">
+            <img src="fill.svg" class="img">
+          </div>
+       </section>
+       <section class="child">
+         <div class="form">
+           <form method="post" action="orderform.php">
+             <fieldset>
+               <legend id= "note" align="right"> ORDER </legend>
+               <legend id="name">Name :</legend>
+               <input type="text" name="Name" required />
+
+               <legend id="n">Album ID :</legend>
+               <input type="text" name="AlbumID" required />
+
+               <legend id="a">Amount :</legend>
+               <input type="text" name="Amount" required/>
+
+               <legend id="c">Contact :</legend>
+               <input type="text" name="Contact" required/>
+
+               <legend id="d">Delivery :</legend>
+               <td><input type="text" name="Delivery" placeholder="REG/EMS" required/>
+
+               <legend id="ad">Address :</legend>
+               <input type="text" name="Address" required/>
+               <br>
+               <br>
+               <input type="submit" name="submitorder" value="Submit" />
+             </fieldset>
+           </form>
+
+         </div>
+       </section>
+      </section>
+	 </body>
+   <script src="script.js"></script>
+</html>

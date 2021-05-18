@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Manage Product</title>
+    <link href="cdProduct.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/3ff17dbd4d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Navigation Bar-->
+      <div class="topnav" id="myTopnav">
+        <a href="amhome.html">Home</a>
+        <a href="cdProduct.html" class="active">Manage Product</a>
+        <a href="update.html">Update Customer Status</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+      </div>
+    </header>
+      <div class="form">
+        <form method="post" action="cdProduct.php">
+          <fieldset>
+            <legend id= "note" align="right"> ADD PRODUCT </legend>
+
+            <legend id="Name"><b>Name: </b></legend> 
+            <input type="text" name="Name" placeholder="Album Name" required/>
+
+            <legend id="Price"><b>Price: </b></legend>
+            <input type="text" name="Price" placeholder="Price per Unit" required/>
+            
+            <legend id="EndDate"><b>End Date: </b></legend> 
+            <input type="text" name="EndDate" placeholder="YYYY-MM-DD" required/>
+
+            <br>
+            <input type="submit" name="create" value="SAVE" class="btn1" />
+
+          </fieldset>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+        <form method="post" action="cdProduct.php">
+          <fieldset>
+            <legend id= "note" align="right"> DELETE PRODUCT </legend>
+
+            <legend id="EndDate"><b>Album ID: </b></legend> 
+            <input type="text" name="id" required />
+
+            <br>
+
+            <input type="submit" name="delete" value="DELETE" class="btn1"/>
+         </fieldset>
+        </form>
+
+        <br>
+
+        <a href="showProduct.php"><input type="button" class="btn1" value="SHOW ALL PRODUCT"></a>
+
+      <div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
